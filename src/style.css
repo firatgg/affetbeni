@@ -212,9 +212,10 @@ button {
 
 .footer {
   position: fixed;
-  bottom: 0rem;
+  bottom: 0;
   left: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1.5rem;
   text-align: center;
   color: #fff;
@@ -241,10 +242,12 @@ button {
 @media (max-width: 768px) {
   .content {
     padding: 2rem;
+    width: 85%;
+    box-sizing: border-box;
   }
 
   .title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .buttons {
@@ -263,6 +266,7 @@ button {
   .modal-content {
     padding: 2rem;
     width: 85%;
+    box-sizing: border-box;
   }
 
   .modal-content h2 {
@@ -279,16 +283,51 @@ button {
 }
 
 @media (max-width: 480px) {
+  .content {
+    padding: 1.5rem;
+    gap: 1.5rem;
+    width: 90%;
+    box-sizing: border-box;
+  }
+
   .title {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .buttons {
     gap: 1rem;
   }
 
+  button {
+    font-size: 1.1rem;
+    padding: 0.8em 1.5em;
+  }
+
+  .modal-content {
+    padding: 1.5rem;
+    width: 90%;
+    box-sizing: border-box;
+  }
+
+  .modal-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .modal-content p {
+    font-size: 1.1rem;
+  }
+
+  .gif-image {
+    width: 150px;
+  }
+
+  .modal-gif {
+    width: 180px;
+    margin-bottom: 1rem;
+  }
+
   .footer {
-    font-size: 0.9rem;
-    padding-bottom: 2rem;
+    font-size: 0.8rem;
+    padding-bottom: 1.5rem;
   }
 }
