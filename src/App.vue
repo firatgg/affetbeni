@@ -92,12 +92,13 @@ const handleYesClick = () => {
 <template>
   <div class="container">
     <div v-if="!showModal" class="content">
+      <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzRzcmQ3OTJtY2sxdXkwcGNwZDQ0YjN2NWZ2c2R6bXpqNnQ0eHJoZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/I1nwVpCaB4k36/giphy.gif" alt="Lütfen" class="gif-image" />
       <h1 class="title">Beni affeder misin? ❤️</h1>
       <div class="buttons">
         <button 
           ref="yesButtonRef"
           class="yes-btn" 
-          :style="{ transform: `scale(${yesButtonScale})` }"
+          :style="{ transform: `scale(${yesButtonScale})`, transition: 'transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)' }"
           @click="handleYesClick"
         >
           Evet
@@ -114,12 +115,13 @@ const handleYesClick = () => {
 
     <div v-if="showModal" class="modal-overlay">
       <div class="modal-content">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2p2Y3Q0d2N6b3R6aXJ1bXN4cXQ0aXJ6aXJ1bXN4cXQ0aXJ6aXJ1bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26BRv0ThflsHCqDrG/giphy.gif" alt="Mutlu" class="gif-image modal-gif" />
         <h2>Teşekkürler! Seni Seviyorum! 💖</h2>
         <p>Beni affettiğin için çok mutluyum!</p>
       </div>
     </div>
     <div class="footer">
-      Fırat Gültekin
+      <a href="https://github.com/firatgg" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">GitHub: firatgg</a>
     </div>
   </div>
 </template>
